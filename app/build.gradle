@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.wseemann:FFmpegMediaMetadataRetriever:1.0.11'
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:support-v4:22.1.1'
+    compile files('libs/isoparser-1.0-RC-37.jar')
+    compile files('libs/isoparser-1.1.9.jar')
+    compile files('libs/isoparser-1.1.9-javadoc.jar')
+    compile files('libs/fastjson-1.2.9.jar')
+}
+android {
+    signingConfigs {
+        realse {
+            keyAlias 'didipack'
+            keyPassword 'didipack'
+        }
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.dnj.didipack"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+        buildTypes {
+            release {
+                minifyEnabled true
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+
+        repositories {
+            flatDir {
+                dirs 'libs'
+            }
+        }
+
+        sourceSets {
+            main {
+                jniLibs.srcDir 'libs'
+            }
+        }
+
+        android.applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    //这里修改apk文件名
+                    def fileName = "didipack_${releaseTime()}.apk"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+
+    }
+
+
+}

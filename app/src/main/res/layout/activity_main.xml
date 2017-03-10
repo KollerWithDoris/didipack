@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_title"
+        android:orientation="vertical">
+
+
+        <!--<fragment
+            android:id="@+id/fragment_record"
+            class="com.dnj.didipack.module.ui.RecordSimpleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />-->
+        <fragment
+            android:id="@+id/fragment_record"
+            class="com.dnj.didipack.module.ui.RecorderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_photo"
+            class="com.dnj.didipack.module.ui.PhotoSimpleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_video"
+            class="com.dnj.didipack.module.ui.VideoSimpleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_device_set"
+            class="com.dnj.didipack.module.ui.SettingFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/bottom_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/record"
+            style="@style/home_bottom_title_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_record_bg"
+            android:text="@string/record" />
+
+        <RadioButton
+            android:id="@+id/local_photo"
+            style="@style/home_bottom_title_style"
+            android:drawableTop="@drawable/tab_localphoto_bg"
+            android:text="@string/local_photo" />
+
+        <RadioButton
+            android:id="@+id/local_video"
+            style="@style/home_bottom_title_style"
+            android:drawableTop="@drawable/tab_localvideo_bg"
+            android:text="@string/local_video" />
+
+        <RadioButton
+            android:id="@+id/device_set"
+            style="@style/home_bottom_title_style"
+            android:drawableTop="@drawable/tab_setting_bg"
+            android:text="@string/setting" />
+    </RadioGroup>
+
+</RelativeLayout>

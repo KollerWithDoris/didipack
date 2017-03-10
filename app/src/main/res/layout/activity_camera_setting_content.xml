@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.ui.CameraSettingContentSimpleActivity">
+    <include android:id="@+id/common_bar"
+        layout="@layout/common_toolbar">
+    </include>
+
+    <ListView
+        android:layout_below="@+id/common_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:cacheColorHint="@color/white"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:background="#d9d9d9"
+        android:divider="#d9d9d9">
+    </ListView>
+</RelativeLayout>

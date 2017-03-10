@@ -1,0 +1,24 @@
+<resources>>
+
+    <!-- <style name="AppTheme.NoActionBar">
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+         <item name="android:statusBarColor">@android:color/transparent</item>
+     <item name="android:windowTranslucentStatus">false</item>
+          <item name="android:windowTranslucentNavigation">true</item>
+
+         <item name="android:windowFullscreen">true</item>
+        <item name="toolbarStyle">@style/CommonToolbar</item>
+     </style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/statusBarcolor</item>
+        <item name="colorPrimaryDark">@color/statusBarcolor</item>
+        <item name="colorAccent">@color/statusBarcolor</item>
+        <item name="android:statusBarColor">@color/statusBarcolor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+ </resources>

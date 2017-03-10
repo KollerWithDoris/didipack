@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.ui.RecordSimpleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_toolbar_bg_small"
+        android:orientation="vertical">
+
+        <include android:id="@+id/common_bar"
+            layout="@layout/common_toolbar">
+        </include>
+
+        <RadioGroup
+            android:padding="5dp"
+            android:layout_below="@id/title"
+            android:id="@+id/bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/flash"
+                style="@style/commom_bar_bottom_title_style"
+                android:text="@string/flash_moment"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/urgent"
+                style="@style/commom_bar_bottom_title_style"
+                android:text="@string/urgent_video" />
+
+            <RadioButton
+                android:id="@+id/loop"
+                style="@style/commom_bar_bottom_title_style"
+                android:text="@string/loop_video"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/record_pager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/device_list"
+        android:cacheColorHint="@color/white"
+        android:dividerHeight="1dp"
+        android:background="#d9d9d9"
+        android:divider="#d9d9d9"
+        />
+</LinearLayout>

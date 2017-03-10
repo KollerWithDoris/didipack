@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/head_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="visible"
+        android:src="@drawable/default_app_icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible"
+        android:id="@+id/ll_name"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="参数名"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingName"
+        android:gravity="center"
+        android:text="选项名称"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:contentDescription="选项名称"
+        android:drawableEnd="@drawable/sel_normal"
+        android:visibility="visible"/>
+
+    <CheckBox
+        android:id="@+id/item_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:button="@drawable/item_clouddog_checkbox"
+        android:checked="false"
+        android:focusable="false"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:id="@+id/none_view"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:visibility="gone" />
+</LinearLayout>

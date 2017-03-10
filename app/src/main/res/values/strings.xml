@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">滴滴拍客</string>
+    <string name="action_settings">Settings</string>
+    <string name="record">我的记录仪</string>
+    <string name="local_photo">本地相册</string>
+    <string name="local_video">本地视频</string>
+    <string name="setting">设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_camera_configuring">消息提醒</string>
+    <string name="msg_download">下载进度:</string>
+    <!--common-->
+    <string name="once_again_to_exit">再按一次退出</string>
+    <string name="prompts">提示</string>
+    <string name="exit_or_not">是否确定退出？</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="version_num">版本号</string>
+    <!--bar-->
+    <string name="flash_moment">精彩瞬间</string>
+    <string name="urgent_video">紧急视频</string>
+    <string name="loop_video">循环视频</string>
+
+    <string name="title_activity_fullscreen_vlc_player">FullscreenVlcPlayer</string>
+    <!--detail_bar-->
+    <string name="attr">信息</string>
+    <string name="send">发送</string>
+    <string name="delete">删除</string>
+    <string name="download">下载</string>
+
+    <!--pullToRefresh-->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">松开立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">松开立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="pull_to_loadmore">加载更多</string>
+
+    <!--setting-->
+    <string-array name="setting">
+        <item>null</item>
+        <item>摄像机设置</item>
+        <item>null</item>
+        <item>关于</item>
+     <!--   <item>意见反馈</item> -->
+    </string-array>
+
+    <string-array name="setting_carmer">
+        <item>null</item>
+        <item>存储容量查询</item>
+        <item>null</item>
+        <item>视频质量</item>
+        <item>视频分辨率</item>
+        <item>声音录制</item>
+        <!--<item>智能驾驶</item> -->
+        <item>null</item>
+        <item>开关机提示音</item>
+        <item>碰撞感应灵敏度</item>
+        <item>null</item>
+        <item>固件升级</item>
+        <item>恢复出厂设置</item>
+    </string-array>
+
+    <string-array name="setting_video_HD">
+        <item>超清</item>
+        <item>高清</item>
+        <item>普清</item>
+    </string-array>
+
+    <string-array name="setting_video_resolutions">
+        <item>1920*1280 30P 16:9</item>
+        <item>1280*720 60P 16:9</item>
+        <item>1280*720 30P 16:9</item>
+        <item>848*480 60P 16:9</item>
+        <item>848*480 30P 16:9</item>
+        <item>432*240 120P 16:9</item>
+    </string-array>
+
+    <string-array name="setting_sdcard">
+        <item>null</item>
+        <item>SD卡总容量</item>
+        <item>已用</item>
+        <item>null</item>
+        <item>格式化SD卡</item>
+    </string-array>
+
+    <string-array name="setting_impact_name">
+        <item>最大</item>
+        <item>适中</item>
+        <item>最小</item>
+        <item>关闭</item>
+    </string-array>
+
+    <string-array name="setting_impact">
+        <item>null</item>
+        <item>maxs</item>
+        <item>mids</item>
+        <item>mins</item>
+        <item>offs</item>
+    </string-array>
+
+    <array name="setting_icon">
+        <item>@drawable/default_app_icon</item>
+        <item>@drawable/icon_set</item>
+        <item>@drawable/default_app_icon</item>
+        <item>@drawable/icon_about_us</item>
+        <item>@drawable/icon_feedback</item>
+    </array>
+
+    <array name="device_icon">
+        <item>null</item>
+        <item>@mipmap/device_icon</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@mipmap/device_icon</item>
+        <item>@mipmap/device_icon</item>
+        <item>@mipmap/device_icon</item>
+    </array>
+
+    <string-array name="device_name">
+        <item>null</item>
+        <item>connect-dnjdvr-wifi</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>dnj_dvr</item>
+        <item>dnj_dvrSec</item>
+        <item>dnj_dvrTrd</item>
+    </string-array>
+
+    <string name="title_activity_real_time">RealTimeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

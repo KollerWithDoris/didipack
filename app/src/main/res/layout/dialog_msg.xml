@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="700.0px"
+        android:layout_height="16.0px"
+        android:layout_marginTop="181.0px"
+        android:layout_marginBottom="224.0px"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <TextView
+        android:textSize="@dimen/dialog_msg"
+        android:textColor="@color/dark_grey"
+        android:id="@+id/txt_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-120.0px"
+        android:text="@string/msg_camera_configuring"
+        android:layout_above="@id/pb"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textSize="@dimen/dialog_msg"
+        android:textColor="@color/dark_grey"
+        android:id="@+id/txt_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-160.0px"
+        android:text="@string/msg_download"
+        android:layout_below="@id/pb"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelDownload"
+        android:background="@color/white_smoke"
+        android:text="取消"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dark_grey"
+        android:layout_below="@id/txt_second"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

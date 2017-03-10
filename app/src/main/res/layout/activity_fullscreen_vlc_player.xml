@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/black"
+    tools:context="com.wass08.vlcsimpleplayer.FullscreenVlcPlayer">
+
+    <LinearLayout
+        android:id="@+id/vlc_container"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible"
+            android:background="@android:color/black"
+            >
+
+            <SurfaceView
+                android:id="@+id/vlc_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                />
+
+
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#69000000"
+                android:id="@+id/vlc_overlay"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:background="#8000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_button"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rl_title"
+                    android:background="#8000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center|top"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@android:color/white"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center_vertical">
+			
+			            <View
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="1"
+			                ></View>
+			
+			            <ImageView
+			                android:id="@+id/iv_takePhoto"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center|left"
+			                android:padding="10dp"
+			                android:src="@drawable/take_photo_btn" />
+			
+			            <View
+			                android:layout_width="0dp"
+			                android:layout_height="match_parent"
+			                android:layout_weight="1"
+			                />
+			
+			            <ImageView
+			                android:id="@+id/iv_record"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center|right"
+			                android:padding="10dp"
+			                android:src="@drawable/real_time_record" />
+			
+			            <View
+			                android:layout_width="0dp"
+			                android:layout_height="match_parent"
+			                android:layout_weight="1"
+			               />
+			  
+                    
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
